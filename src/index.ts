@@ -2,6 +2,8 @@ import { createServer } from './server';
 
 const app = createServer();
 
-app.listen(80, () => {
-  console.log('server listening');
+const port = 80;
+
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
 });
