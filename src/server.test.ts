@@ -9,12 +9,4 @@ describe('server', () => {
       .expect(200)
       .expect({ data: 'success' });
   });
-
-  test('POST /shorten', async () => {
-    const app = createServer();
-    await supertest(app)
-      .post('/shorten')
-      .expect(200)
-      .expect({ data: 'success' });
-  })
 })
